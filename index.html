@@ -9,27 +9,16 @@
   <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
       
-      <!-- Завантаження 3D-моделі -->
-      
-
-      <!-- Освітлення -->
-      
-
       <!-- Маркер Hiro -->
       <a-marker preset="hiro">
         <a-light type="ambient" color="#888"></a-light>
       <a-light type="directional" position="-1 1 0.5" intensity="0.6"></a-light>
-        <a-assets>
-          <a-asset-item id="myModel" src="assets/chair.glb"></a-asset-item>
-        </a-assets>
-        <!-- Синя сфера -->
+        
         <a-sphere position="0 0.5 0" radius="0.2" color="#FF0000"></a-sphere>
 
-        <!-- Зелений циліндр (розміщено над сферою) -->
         <a-cylinder position="0 1.5 0" radius="0.2" height="0.1" color="#7BC8A4"></a-cylinder>
 
-        <!-- 3D-модель -->
-        <a-gltf-model src="#myModel" position="0 0 0" scale="0.1 0.1 0.1"></a-gltf-model>
+        <a-gltf-model src="chair.glb" position="0 0 0" scale="0.1 0.1 0.1"></a-gltf-model>
 
       </a-marker>
 
